@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on/off</title>
+ <style>
+    body{
+        /* background-color: black; */
+        
+  background-image: url('Transforming-Education-with-Virtual-Labs.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}    
+ </style>
+</head>
+<body>
+    
+
+<script>
+    function turnOnOff() {
+        var image=document.getElementById('Image');
+        var image1=document.getElementById('Image1');
+        var image2=document.getElementById('Image2');
+
+        if(image.src.match("ONbulb"))
+         image.src=
+"file:///D:/priya1(html)/OFFbulb.jpg";
+        else
+            image.src=
+"file:///D:/priya1(html)/ONbulb.jpg";
+    
+
+    if(image1.src.match("ONbulb"))
+         image1.src=
+"file:///D:/priya1(html)/OFFbulb.jpg";
+        else
+            image1.src=
+"file:///D:/priya1(html)/ONbulb.jpg";
+
+if(image2.src.match("ONbulb"))
+         image2.src=
+"file:///D:/priya1(html)/OFFbulb.jpg";
+        else
+            image2.src=
+"file:///D:/priya1(html)/ONbulb.jpg";
+    }
+</script>
+ 
+    <img id="Image"
+          
+          src=
+"file:///D:/priya1(html)/OFFbulb.jpg">
+    <img id="Image1"
+         
+          src=
+"file:///D:/priya1(html)/OFFbulb.jpg">
+<img id="Image2"
+         
+          src=
+"file:///D:/priya1(html)/OFFbulb.jpg">
+
+<button type="button" onclick="turnOnOff()">Click Me!</button>
+ 
+<p>
+    Click on the bulb to turn it ON and OFF
+</p>
+  
+</body>
+
+</html>
